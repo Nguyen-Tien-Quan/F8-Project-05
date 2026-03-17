@@ -903,6 +903,10 @@ button {
     margin-top: 18px;
 }
 
+.blog__cta {
+    --width: 123px;
+}
+
 .blog__list {
     margin-top: 70px;
     display: grid;
@@ -922,6 +926,10 @@ button {
 .blog-item:hover {
     border-color: #fff;
     box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.07);
+}
+
+.blog-item__img:hover {
+    scale: 1.1;
 }
 
 .blog-item__img {
@@ -960,6 +968,208 @@ button {
 
 .blog-item__link:hover {
     color: #7264d6;
+}
+
+/* App */
+.app {
+    padding: 60px 0 100px;
+}
+
+.app__inner {
+    position: relative;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #7264d6;
+    border-radius: 24px;
+    background: #7264d6;
+}
+
+.app__title::before {
+    background-color: #fff;
+}
+
+.app__title,
+.app__heading {
+    color: #fff;
+}
+
+.app__heading {
+    margin-top: 12px;
+}
+
+.app__desc {
+    margin-top: 18px;
+    width: 435px;
+    color: #fff;
+    text-align: center;
+}
+
+.app__groups {
+    margin-top: 38px;
+    display: flex;
+    column-gap: 16px;
+}
+
+.app__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 182px;
+    height: 64px;
+    border-radius: 6px;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.app__item:hover {
+    transform: translateY(-4px);
+    box-shadow: 2px 5px 0 0 #7264d690;
+}
+
+.app__decor-item {
+    position: absolute;
+    animation: spinner 1s infinite linear;
+}
+
+.app__decor-item:nth-child(1) {
+    top: 49px;
+    left: 112px;
+}
+
+.app__decor-item:nth-child(2) {
+    left: 166px;
+    bottom: 49px;
+}
+
+.app__decor-item:nth-child(3) {
+    top: 49px;
+    right: 112px;
+}
+
+.app__decor-item:nth-child(4) {
+    right: 166px;
+    bottom: 49px;
+}
+
+/* Footer */
+.footer {
+    padding: 100px 0 0;
+}
+
+.footer__row {
+    display: grid;
+    column-gap: 160px;
+    grid-template-columns: auto 1fr 1fr 1fr;
+}
+
+.footer__column-heading {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.footer__list {
+    margin-top: 24px;
+}
+
+.footer-item__link {
+    display: inline-block;
+    opacity: 0.75;
+    color: #6a6e78;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+}
+
+.footer-item + .footer-item {
+    margin-top: 12px;
+}
+
+.footer__column-desc {
+    margin-top: 24px;
+    width: 371px;
+}
+
+.footer__column-desc + .footer__column-heading {
+    margin-top: 40px;
+}
+
+.footer__inner {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-search__form {
+    width: 270px;
+    height: 52px;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+}
+
+.footer-search__form-input {
+    padding: 12px;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border-color: transparent;
+    color: #8e919a;
+}
+
+.footer-search__form-input::placeholder {
+    color: #8e919a;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.footer-search__form-submit {
+    --width: 113px;
+    margin-left: 20px;
+    background: #7264d6;
+    color: #fff;
+    border-color: #7264d6;
+}
+
+.footer__contact {
+    margin-top: 70px;
+    display: flex;
+    column-gap: 90px;
+}
+
+.footer__contact-link {
+    padding: 4px 10px;
+    color: #6a6e78;
+    text-align: justify;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.footer__contact-link:first-child {
+    padding-left: 0;
+}
+
+.copy-right {
+    margin-top: 28px;
+    padding: 28px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+    background: #7264d6;
 }
 
 @keyframes sway {
@@ -1018,5 +1228,14 @@ button {
     }
     from {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    to {
+        rotate: 0deg;
+    }
+    from {
+        rotate: 180deg;
     }
 }

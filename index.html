@@ -12,6 +12,12 @@
             rel="stylesheet"
         />
 
+        <!-- animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
         <!-- Favicon -->
         <link rel="shortcut icon" href="./assets/icon/Card.svg" type="" />
         <!-- Reset css -->
@@ -72,20 +78,33 @@
         <section class="hero">
             <div class="container">
                 <div class="hero__inner">
-                    <div class="hero__content">
+                    <div
+                        class="hero__content"
+                        data-aos="fade-right"
+                        data-aos-duration="1500"
+                    >
                         <p class="title">Digital Smart Wallet</p>
-                        <h1 class="hero__heading">
+                        <h1 class="hero__heading" data-aos="fade-up">
                             Digital
                             <strong class="hero__heading-value">Payment</strong>
                             For Everyone.
                         </h1>
-                        <p class="hero__desc">
+                        <p
+                            class="hero__desc"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                        >
                             We bring together eveything that’s required to build
                             websites and apps that accept payments and send
                             payouts globally. We are the best platform.
                         </p>
 
-                        <form action="" class="search__form">
+                        <form
+                            action=""
+                            class="search__form"
+                            data-aos="fade-up"
+                            data-aos-duration="2000"
+                        >
                             <input
                                 type="text"
                                 class="search__form-input"
@@ -104,7 +123,11 @@
                         </span>
                     </div>
 
-                    <div class="hero__wrap">
+                    <div
+                        class="hero__wrap"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom"
+                    >
                         <figure class="hero__wrap-media">
                             <img
                                 src="./assets/img/mobile-screen.png"
@@ -144,12 +167,12 @@
             </div>
         </section>
 
-        <main style="height: 10000px">
+        <main>
             <!-- Work -->
             <section class="work">
                 <div class="container">
                     <div class="work__inner">
-                        <div class="work__media">
+                        <div class="work__media" data-aos="fade-right">
                             <figure class="work__media-wrap">
                                 <img
                                     src="./assets/icon/Card.svg"
@@ -250,7 +273,7 @@
                             </button>
                         </div>
 
-                        <div class="payment__media">
+                        <div class="payment__media" data-aos="flip-left">
                             <figure class="payment__media-wrap">
                                 <img
                                     src="./assets/img/payments-01.png"
@@ -300,7 +323,7 @@
             <section class="transfer">
                 <div class="container">
                     <div class="transfer__inner">
-                        <div class="transfer__media">
+                        <div class="transfer__media" data-aos="zoom-in">
                             <figure class="transfer__media-wrap">
                                 <img
                                     src="./assets/img/transfer.png"
@@ -392,7 +415,7 @@
             <!-- Clients -->
             <section class="clients">
                 <div class="container">
-                    <div class="client__top">
+                    <div class="client__top" data-aos="fade-up">
                         <p class="title">Our Testimonial</p>
                         <h2 class="section-heading">What Clients Says</h2>
                         <p class="section-desc client__desc">
@@ -404,7 +427,11 @@
                     <div class="client-comments">
                         <div class="client__list">
                             <!-- client item 1 -->
-                            <div class="client-item">
+                            <div
+                                class="client-item"
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                            >
                                 <div class="client-item__wrap">
                                     <blockquote class="client-item__quote">
                                         Fantastic platform for online banking.
@@ -434,7 +461,11 @@
                             </div>
 
                             <!-- client item 2 -->
-                            <div class="client-item">
+                            <div
+                                class="client-item"
+                                data-aos="fade-left"
+                                data-aos-offset="300"
+                            >
                                 <div class="client-item__wrap">
                                     <blockquote class="client-item__quote">
                                         Fantastic platform for online banking.
@@ -476,7 +507,11 @@
             <!-- Blogs -->
             <section class="blogs">
                 <div class="container">
-                    <div class="blog__top">
+                    <div
+                        class="blog__top"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom"
+                    >
                         <div class="blog__inner">
                             <p class="title">Our Blog</p>
                             <h2 class="section-heading blog__heading">
@@ -494,7 +529,11 @@
 
                     <div class="blog__list">
                         <!-- Blog item 1 -->
-                        <article class="blog-item">
+                        <article
+                            class="blog-item"
+                            data-aos="fade-right"
+                            data-aos-anchor-placement="center-center"
+                        >
                             <a href="#!">
                                 <img
                                     src="./assets/img/blog-01.png"
@@ -512,14 +551,18 @@
                                         to save in the future...
                                     </a>
                                 </h3>
-                                <a href="#!" class="blog-item__link"
-                                    >Read Blog</a
-                                >
+                                <a href="#!" class="blog-item__link">
+                                    Read Blog
+                                </a>
                             </div>
                         </article>
 
                         <!-- Blog item 2 -->
-                        <article class="blog-item">
+                        <article
+                            class="blog-item"
+                            data-aos="fade-right"
+                            data-aos-anchor-placement="center-center"
+                        >
                             <a href="#!">
                                 <img
                                     src="./assets/img/blog-02.png"
@@ -544,7 +587,11 @@
                         </article>
 
                         <!-- Blog item 3 -->
-                        <article class="blog-item">
+                        <article
+                            class="blog-item"
+                            data-aos="fade-left"
+                            data-aos-anchor-placement="center-center"
+                        >
                             <a href="#!">
                                 <img
                                     src="./assets/img/blog-03.png"
@@ -569,7 +616,11 @@
                         </article>
 
                         <!-- Blog item 4 -->
-                        <article class="blog-item">
+                        <article
+                            class="blog-item"
+                            data-aos="fade-left"
+                            data-aos-anchor-placement="center-center"
+                        >
                             <a href="#!">
                                 <img
                                     src="./assets/img/blog-04.png"
@@ -587,9 +638,9 @@
                                         to save in the future...
                                     </a>
                                 </h3>
-                                <a href="#!" class="blog-item__link"
-                                    >Read Blog</a
-                                >
+                                <a href="#!" class="blog-item__link">
+                                    Read Blog
+                                </a>
                             </div>
                         </article>
                     </div>
@@ -597,6 +648,160 @@
             </section>
 
             <!-- Apps -->
+            <section class="app" data-aos="fade-up">
+                <div class="container">
+                    <div class="app__inner">
+                        <p class="title app__title">Our App</p>
+                        <h2 class="section-heading app__heading">
+                            Download the Apps
+                        </h2>
+                        <p class="section-desc app__desc">
+                            Download our mobile apps and get started today with
+                            a special online bank and move faster
+                        </p>
+
+                        <div class="app__groups">
+                            <a href="#!" class="app__item">
+                                <img
+                                    src="./assets/icon/google-play.svg"
+                                    alt="Google play"
+                                />
+                            </a>
+
+                            <a href="#!" class="app__item">
+                                <img
+                                    src="./assets/icon/app-store.svg"
+                                    alt="App tore"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="app__decor-list">
+                            <div class="app__decor-item">
+                                <img src="./assets/icon/star.svg" alt="" />
+                            </div>
+                            <div class="app__decor-item">
+                                <img src="./assets/icon/star.svg" alt="" />
+                            </div>
+                            <div class="app__decor-item">
+                                <img src="./assets/icon/star.svg" alt="" />
+                            </div>
+                            <div class="app__decor-item">
+                                <img src="./assets/icon/star.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <section class="footer__column">
+                        <a href="#">
+                            <img src="./assets/img/Logo.svg" alt="CeloBank" />
+                        </a>
+                    </section>
+
+                    <section class="footer__column">
+                        <h3 class="footer__column-heading">Sitemap</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link">Home</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link"
+                                    >Abouts
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link"
+                                    >Growers
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link"
+                                    >Merchants
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link"
+                                    >Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="footer__column">
+                        <h3 class="footer__column-heading">Socials</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link"
+                                    >Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link">
+                                    Linkedin
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link"
+                                    >Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-item__link"
+                                    >Twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="footer__column">
+                        <h3 class="footer__column-heading">Head Office</h3>
+                        <p class="section-desc footer__column-desc">
+                            Xilliams Corner Wine © 2017. 1112 A Market St # Ste
+                            B22, Charlottesville, CA 45565
+                        </p>
+                        <h3 class="footer__column-heading">News letter</h3>
+
+                        <div class="footer__inner">
+                            <form action="" class="footer-search__form">
+                                <input
+                                    type="email"
+                                    name=""
+                                    id=""
+                                    class="footer-search__form-input"
+                                    placeholder="Email address..."
+                                />
+                            </form>
+                            <button
+                                type="submit"
+                                class="btn footer-search__form-submit"
+                            >
+                                Subscribe
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="footer__contact">
+                    <a href="#!" class="footer__contact-link">
+                        email@gmail.com
+                    </a>
+                    <a href="#!" class="footer__contact-link">
+                        (123) 456-7890
+                    </a>
+                </div>
+            </div>
+            <p class="copy-right">© 2026 Tiến Quân All rights reserved.</p>
+        </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
